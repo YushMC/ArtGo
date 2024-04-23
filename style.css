@@ -50,7 +50,7 @@ header{
 }
 .content_header >hr{
     border: none;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background-color: #ffffffb4;
     border-radius: 20%;
@@ -179,6 +179,67 @@ main{
     color: #fff;
     padding: 2% 0%;
     text-align: center;
+}
+
+section{
+    width: 100%;
+    background-image: url(https://ethic.es/wp-content/uploads/2022/12/vangog-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content_cards{
+    color: #fff;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    background: #000000be;
+    backdrop-filter: blur(5px);
+}
+.card{
+    width: 70%;
+    padding: 2%;
+    margin: 1% 0%;
+    border: solid 1px #ffffff83;
+    border-radius: 8px;
+}
+.card:nth-child(2n){
+    margin-left: 30%;
+}
+.content_image_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_image_card img{
+    width: 100%;
+    border-radius: 8px;
+}
+.content_description_card{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_description_card> h3{
+    text-transform: uppercase;
+}
+.content_description_card > hr{
+    border:none;
+    height: 2px;
+    background-color: #ffffff52;
+    margin: 1% 0%;
+    width: 10%;
+    transition: all 0.5s linear;
+}
+.content_description_card > h3:hover ~ hr {
+    width: 100%;
+}
+.content_description_card > p{
+    margin-bottom: 1%;
+    font-weight: 200;
+    font-size: .8rem;
 }
 @keyframes respirar {
     0%{
