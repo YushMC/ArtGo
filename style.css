@@ -192,19 +192,27 @@ section{
     color: #fff;
     padding: 5% 10%;
     display: flex;
-    flex-direction: column;
     background: #000000be;
     backdrop-filter: blur(5px);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .card{
-    width: 70%;
+    width: 40%;
     padding: 2%;
-    margin: 1% 0%;
+    margin:  1% 2%;
     border: solid 1px #ffffff83;
     border-radius: 8px;
+    transition: all 0.3s linear;
 }
-.card:nth-child(2n){
-    margin-left: 30%;
+/*
+*/
+.card:hover{
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.2);
+}
+.content_cards:hover > .card:not(:hover){
+    filter: blur(5px);
 }
 .content_image_card{
     width: 100%;
@@ -263,6 +271,16 @@ section{
     .button_front_page{
         width: 100%;
         margin-bottom: 5%;
+    }
+    
+    .content_cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 70%;
+    }
+    .card:nth-child(2n){
+        margin-left: 30%;
     }
 }
 
@@ -324,5 +342,11 @@ section{
     header{
         backdrop-filter: blur(10px);
         background: #000000b4;
+    }
+    .card{
+        width: 100%;
+    }
+    .card:nth-child(2n){
+        margin-left: inherit;
     }
 }
